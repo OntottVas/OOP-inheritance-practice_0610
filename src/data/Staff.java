@@ -26,8 +26,8 @@ public class Staff extends Person {
         this.pay = pay;
     }
 
+    @Override
     public String toString() {
-        return "Staff[Person[name = " + super.getName() + ", address = " + super.getAddress() +
-                "], school = " + this.school + ", pay = " + this.pay + "]";
+        return "Staff[" + super.toString() + "], school = " + this.school + ", pay = " + this.pay + "]";
     }
 }

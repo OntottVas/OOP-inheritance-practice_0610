@@ -36,8 +36,9 @@ public class Student extends Person {
         this.fee = fee;
     }
 
+    @Override
     public String toString() {
-        return "Student[Person[name = " + super.getName() + ", address = " + super.getAddress() +
-            "], program = " + this.program + ", year = " + this.year + ", fee = " + this.fee + "]";
+        return "Student[" + super.toString() +", program = " + this.program + ", year = " + this.year +
+                ", fee = " + this.fee + "]";
     }
 }
